@@ -1,6 +1,6 @@
 SELECT 
-	mu.nome_musica as cancao,
-	COUNT(hr.usuario_id)
+	mu.nome_musica as 'cancao',
+	COUNT(hr.usuario_id) as 'reproducoes'
 FROM SpotifyClone.Musicas AS mu
 INNER JOIN SpotifyClone.Historico_reproducao as hr
 	ON mu.musica_id = hr.musica_id
